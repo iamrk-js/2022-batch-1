@@ -1,0 +1,22 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.box{
+    width: 200px;
+    height: 200px;
+}
+/* .box1{
+    background-color: orange;
+    display: none;  
+} */
+.box1{
+    background-color: orange;
+    visibility: visible;  
+}
+.box2{
+    background-color: blueviolet;
+}
+

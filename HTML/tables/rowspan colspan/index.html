@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Table</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <style>
+        /* inline css >> when we apply css inside HTML element using style attribute */
+        /* internal css/ embbeded css >> when we apply css inside Head using style element */
+    </style>
+</head>
+
+<body>
+    <h2>Table One</h2>
+    <table>
+        <tbody>
+            <tr>
+                <td colspan="2" style="background-color: blueviolet;"></td>
+                <td></td>
+                <!-- <td></td> -->
+
+            </tr>
+            <tr>
+                <td colspan="3" style="background-color: orange;"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+
+            </tr>
+            <!-- <tr >
+                <td colspan="2"></td>
+                <td></td>
+                <td></td>
+            </tr> -->
+        </tbody>
+    </table>
+    <!-- DRY >> Do not repeat yourself -->
+    <hr>
+    <h2>Table Two</h2>
+    <table>
+        <tbody>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <!-- <td></td> -->
+
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td colspan="2" style="background-color: brown;"></td>
+                <!-- <td></td> -->
+
+            </tr>
+        </tbody>
+    </table>
+
+    <hr>
+    <h2>Table Three</h2>
+    <table>
+        <tbody>
+            <tr>
+                <td rowspan="2" style="background-color: cadetblue;">1</td>
+                <td></td>
+                <td></td>
+
+            </tr>
+            <tr>
+                <!-- <td >1</td> -->
+                <td></td>
+                <td rowspan="2" style="background-color: cyan;"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <!-- <td></td> -->
+
+            </tr>
+        </tbody>
+    </table>
+    <hr>
+    <h2>Table Four</h2>
+    <table>
+        <tbody>
+            <tr>
+                <td></td>
+                <td></td>
+                <td rowspan="3" style="background-color: darkblue;"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <!-- <td></td> -->
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <!-- <td></td> -->
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>

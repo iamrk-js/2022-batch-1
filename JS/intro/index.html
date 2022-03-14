@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javaScript Intro</title>
+</head>
+
+<body>
+    html + css + javaScript
+
+    <script>
+        // tulsi >> 77 // number
+        // nativeplace >> nanded // string
+        // isHappy >> Yes // true
+        // canDrive >> no // false >> boolean
+        // firstWc >> 1983 // number
+        // panipat >> // don't no // undefined
+        // chinaWc >> dont happened 
+        // email >> ak007@gmail.com // string
+
+        // Primitive || Non-Object || Non Refrence
+        // String , Number, boolean, undefined and null
+        // Non-primitive || Object || Refrence
+
+
+        // Primitive(Non Object) Data Types
+        var pers = 77;
+        console.log(pers, typeof pers);
+
+        var nativePlace = "Nanded";
+        console.log(nativePlace, typeof nativePlace);
+
+        var isHappy = true;
+        console.log(isHappy, typeof isHappy);
+
+        var firstWc = 1983;
+        console.log(firstWc, typeof firstWc);
+
+        var panipat;
+        console.log(panipat, typeof panipat);
+
+        /// undefined  >> We have dclred but not assign any value to it
+        var noValue = null;
+        // null >> Having No Value
+        console.log(noValue, typeof noValue);
+
+        var x;
+        console.log(x);
+        var x = 10;
+        console.log(x);
+
+
+        var greet1 = "Hello";
+        var greet2 = "World";
+
+        var greetIng = greet1 + " " + greet2;
+        console.log(greetIng);
+
+        var fname = "Tony";
+        var lname = "Stark";
+        var age = 50;
+        var nickName = "IronMan";
+
+        // Hello There I'm Tony Stark, 50 years old. People also called me IronMan
+
+        // String Interpolation
+
+        var result = "Hello There I'm "+fname + " " +lname+ ", "+age+ " years Old. People also called me "+ nickName + ".";
+        
+        console.log(result);
+
+
+        // Coercion of datatypes
+        // The conversion of one data-type into another is called as coercion
+        var x = "Jhon";
+        var y = 33;
+
+        console.log(x, typeof x);
+        console.log(y, typeof y);
+
+        // var z = x + y;
+        var z = y + x;
+
+        console.log(z, typeof z);
+
+
+        var p = -10;
+        var q = true; // true >> 1, false >> 0
+
+        var r = p + q;
+        console.log(r, typeof r);
+
+        var x = "Jhon";
+        var y = 33;
+        var s;
+
+        var result = x + y + s; //"Jhon33undefinded"
+        console.log(result, typeof result)
+
+
+    </script>
+</body>
+
+</html>

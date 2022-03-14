@@ -1,0 +1,77 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* helper class  */
+.text-center{
+    text-align: center;
+}
+a:link,
+a:hover,
+a:focus,
+a:active{
+    text-decoration: none;
+}
+
+/* helper class  */
+
+/* header css Starts */
+.container {
+    width: 1198px;
+    margin: 0 auto;
+}
+.heading{
+    margin: 40px 0px 40px 0px;
+    color: #be2230;
+    font-weight: bold;
+    font-size: 48px;
+    font-family: 'Passion One', cursive;
+}
+.navbar{
+    list-style: none;
+    margin-bottom: 25px;
+}
+
+.navbar li{
+    display: inline-block;
+    margin: 0px 10px;
+}
+
+.navbar li  a{
+    font-size: 14px;
+    color:#424242;
+    padding: 5px;
+    text-transform: capitalize;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.navbar li  a.active,
+.navbar li  a:hover,
+.navbar li  a:focus,
+.navbar li  a:active{
+    color: #be2230;
+}
+
+/* Hero Section Css  */
+.heroImg img{
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+/* info section css  */
+.info h2{
+    font-size: 30px;
+    color: #be2230;
+    margin-bottom: 15px;
+    line-height: 22px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.info p {
+    color: #2e2e2e;
+    font-size: 14px;
+    text-align: justify;
+    margin-bottom: 40px;
+    font-family: 'Poppins', sans-serif;
+}

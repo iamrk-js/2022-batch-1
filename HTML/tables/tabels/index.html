@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible"
+     content="IE=edge">
+    <meta name="viewport" 
+    content="width=device-width, initial-scale=1.0">
+    <title>HTML Table</title>
+    <style>
+        /* table{
+            border: 1px dotted black;
+            border: 1px dashed black;
+            border: 1px solid black;
+            border-width: 1px;
+            border-style: double;
+            border-color: #000;
+            border: 1px solid #000000;
+        }
+        th{
+            border: 1px solid #000000;
+        }
+        td{
+            border: 1px solid #000000;
+        } */
+        table,th, td {
+            border: 1px solid #000000;
+        }
+        table{
+            /* width: 500px; */
+            width: 100%;
+            border-spacing: 15px;
+            /* border-collapse: separate; >> Its by default value*/ 
+            border-collapse: collapse;
+        }
+        td{
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <thead>
+            <th>Sr. no.</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th style="width: 25%;">Email</th>
+            <th style="width: 25%;">Contact</th>
+        </thead>
+        <tbody>
+            <tr style="height: 200px;">
+                <td>01</td>
+                <td>Tony</td>
+                <td>Stark</td>
+                <td>tony@starkindu.com</td>
+                <td>98745633210</td>
+            </tr>
+            <tr>
+                <td>02</td>
+                <td>Peter</td>
+                <td>Parkar</td>
+                <td>peter@starkindus.com</td>
+                <td>98745633210</td>
+            </tr>
+        </tbody>
+    </table>
+    <!-- DRY >> Do not repeat yourself -->
+</body>
+
+</html>

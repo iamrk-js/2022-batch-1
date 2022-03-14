@@ -1,0 +1,21 @@
+div {
+    background-color: aqua;
+    padding: 20px;
+    margin: 10px;
+    width: 45%;
+    display: inline-block;
+    /* float: left; */
+}
+span {
+    background-color: blueviolet;
+    padding: 20px;
+    margin: 50px;
+    display: inline-block;
+}
+
+img {
+    width: 500px;
+    height: 500px;
+    max-width: 100%;
+    object-fit: cover;
+}

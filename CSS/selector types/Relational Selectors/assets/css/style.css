@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Descendants   >> parent - child  */
+#products p {
+    color: orange;
+}
+
+/* direct child  */
+#products > p {
+    color: blueviolet;
+    font-size: 28px;
+    line-height: 1.5;
+}
+#products > p strong {
+    color: black;
+}
+#products article > p strong {
+    color: red;
+}
+
+/* immediate siblings */
+#products + p {
+    font-size: 32px;
+    line-height: 1.5;
+}
+
+/* #products ~ p, #products ~ span { */
+#products ~ *{
+    font-style: italic;
+    font-weight: bold;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid black;
+}
+
+#products + p , #products + p + span{
+   font-weight: bolder;
+   background-color: coral;
+}

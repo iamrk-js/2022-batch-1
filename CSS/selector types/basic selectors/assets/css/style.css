@@ -1,0 +1,82 @@
+*{
+     box-sizing: border-box;
+     margin: 0px;
+     padding: 0px;
+}
+
+/*HTML Tag selector  */
+h1{
+    background-color: blueviolet;
+    padding: 20px;
+    color: #ffffff;
+    text-transform: uppercase;
+    /* text-align: left; bydefault  */
+    text-align: center;
+    /* text-align: right; */
+}
+ /* Class Selector  */
+.info{
+    padding: 10px;
+    background-color: rgba(0,0,0,.3);
+    border: 1px solid grey;
+}
+.aboutUs{
+    padding: 15px;
+    font-size: 22px;
+    line-height: 33px;
+    border: 1px dotted black;
+}
+.btn{
+    padding: 10px;
+    border: 1px solid rgba(0,0,0,.3);
+    text-transform: uppercase;
+    cursor: pointer;
+    margin: 20px;
+    border-radius: 5px;
+    background-color: royalblue;
+    color: #fff;
+}
+/* Id Selector  */
+
+#one{
+    font-size: 30px;
+}
+
+/* Attribute selector  */
+
+a[target] {
+    color: gold;
+    font-size: 26px;
+}
+
+/* a[href='https://www.google.com']{
+    text-decoration: none;
+    margin: 10px;
+    display: inline-block;
+} */
+
+a[href*='google']{
+    text-decoration: none;
+    margin: 10px;
+    display: inline-block;
+    color: blueviolet;
+}
+/* 
+
+    "*" >> If includes 
+    "^" >> If starts with
+    "$" >> If Ends with
+
+*/
+a[href^="https"]{
+    font-style: oblique;
+}
+
+a[href$='.com']{
+    font-weight: bolder;
+}
+
+a[href^="https"][href$=".com"]{
+    color: orange;
+    font-size: 50px;
+}

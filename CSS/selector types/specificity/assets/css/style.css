@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+/* (id,class,tag) */
+/* (1,1,0) */
+
+p#info span.highLight {
+    color: aqua;
+}
+/* (1,1,2) */
+#info span.highLight {
+    color: orange;
+}
+/* (1,1,1) */
+#info .highLight {
+    color: hotpink;
+}
+/* (1,1,0) */
+.highLight {
+    font-size: 140%;
+    color: blueviolet;
+}
+
+.highLight {
+    color: red;
+}
+/* (0,1,0) */
+
+
+p#info2.para{
+    background-color: aqua;
+}
+
+p.para#info2{
+    background-color: hotpink;
+}
+
+
+#test p{
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #000;
+}
+
+#test p {
+    border: 1px solid orange;
+}

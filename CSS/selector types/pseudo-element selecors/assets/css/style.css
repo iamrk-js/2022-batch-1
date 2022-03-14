@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+::selection{
+    background-color: hotpink;
+}
+body{
+    padding: 20px;
+}
+
+/* .first-word{
+    font-size: 140%;
+    font-weight: bolder;
+} */
+
+p::first-letter{
+    font-size: 140%;
+    font-weight: bolder;
+}
+
+p::first-line{
+    font-size: 140%;
+    font-weight: bolder;
+}
+
+/* p::selection{
+    background-color: hotpink;
+} */
+h2{
+    text-align: center;
+}
+
+h2::before{
+    content: 'I ';
+}
+
+h2::after{
+    content: ' FED';
+}

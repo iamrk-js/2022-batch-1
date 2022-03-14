@@ -1,0 +1,7 @@
+.container{
+    width: 900px;
+    height: 100vh;
+    background-color: orange;
+    /* margin: 0 auto 0 auto; */
+    margin: 0 auto;
+}
