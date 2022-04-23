@@ -1,0 +1,11 @@
+@mixin clearBoth {
+    display: table;
+    clear: both;
+    width: 100%;
+};
+
+@mixin link-text($color) {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $color;
+}

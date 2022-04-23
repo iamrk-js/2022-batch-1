@@ -1,0 +1,14 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.box {
+  width: 500px;
+  height: 500px;
+  background-color: orange;
+  border-radius: 5px;
+  opacity: 0.9;
+}

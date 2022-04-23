@@ -1,1 +1,52 @@
-@import './components/buttons'
+@import "./components/variabels";
+@import "./components/mixins";
+@import "./components/buttons";
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.text-right {
+    text-align: right;
+}
+nav {
+    background-color: $color-primary;
+}
+@function divide($x, $y){
+    @return $x / $y
+}
+.row {
+    // display: table;
+    // clear: both;
+    // width: 100%;
+    @include clearBoth;
+    &::after,
+    &::before {
+        // display: table;
+        // clear: both;
+        // width: 100%;
+        @include clearBoth;
+    }
+}
+.col6 {
+    float: left;
+    width: divide(100,2)*1%;
+}
+.navigation {
+    list-style: none;
+
+    li {
+        display: inline-block;
+        margin-left: 10px;
+        &:first-child {
+            margin-left: 0;
+        }
+        a {
+           @include link-text($text-dark);
+        }
+    }
+}
+
+// .navigation li:first-child{
+//     margin-left: 0;
+// }
