@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- cookies >> to store data in browser  // 24-26 kb 
+    Web Storages >>  It is a API given by HTML 5 >> can store 5mb of data 
+                >> local Storages >> 
+                >> Session Storages >> 
+                 Node.js >> Blob Datatype
+                Java >> Internet Banking   
+                What is the diffrence between HTML and HTML 5
+                New Web Api  >> Webstorages , fetch , geoLocation, Drag and Drop 
+                clipboard api, File api  -->
+    <!-- XML  -->
+    <!-- JSON >> javaScript Object Notation -->
+
+    <a href="index2.html" target="_blank">Go to Index2</a>
+    <script>
+      let obj = {
+        fname: "Ravikiran",
+        lname: "Niturkar",
+        conatct: 9730839873,
+        email: "nravikiran5@gmail.com",
+        canDrive : false
+      };
+      console.log(obj);
+      // database/webstorges can only understand JSON
+      // javaScript can understand only javascript Object
+
+      // sending to database
+      // to convert js Object to JSON we use JSON.stringify(jsObject)
+      let jsonObj = JSON.stringify(obj);
+      console.log(jsonObj);
+
+      localStorage.setItem("setObject", jsonObj);
+
+      // when we get data from database/webstorges, that data is in JSON format
+      // to convert JSON data into javascript Object we use JSON.parse(JSONObject)
+
+      // let backTOJSObj = JSON.parse(jsonObj);
+      // console.log(backTOJSObj);
+
+      let getObject = JSON.parse(localStorage.getItem("setObject"));
+      console.log(getObject);
+
+      document.write(`${getObject.fname} ${getObject.lname}<br>`);
+
+      sessionStorage.setItem("setSessionData", jsonObj);
+
+      let getSessionData = JSON.parse(sessionStorage.getItem("setSessionData"));
+      document.write(`${getSessionData.fname} ${getSessionData.lname} 
+                      : From Session Storges`);
+
+      let canDrive = false;
+
+      localStorage.setItem("setCanDrive", canDrive);
+    //   localStorage.clear()
+    localStorage.removeItem('setCanDrive')
+    </script>
+  </body>
+</html>
