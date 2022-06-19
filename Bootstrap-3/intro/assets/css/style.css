@@ -1,0 +1,57 @@
+.demo {
+    height: 250px;
+    background-color: #ccc;
+    margin: 20px 0;
+    font-size: 36px;
+    color: #fff;
+}
+
+.img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.myThumbnail {
+    position: relative;
+    overflow: hidden;
+}
+
+.myThumbnail .caption {
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .8);
+    color: #fff;
+    transform: translateY(100%);
+    transition: all .3s ease-in-out;
+}
+
+.myThumbnail:hover .caption,
+.myThumbnail:focus .caption {
+    transform: translateY(0);
+}
+
+#myCarousel .item img {
+    width: 100%;
+    object-fit: cover;
+}
+
+#myCarousel .carousel-inner {
+    height: 100vh;
+}
+
+.carousel-inner>.item button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 99;
+    font-weight: bold;
+    
+}
+
+
+@media all and (max-width : 768px){
+    #myCarousel .item img {
+        height: 100vh;
+    }
+}

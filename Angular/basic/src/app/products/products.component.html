@@ -1,0 +1,16 @@
+<label for="">Product Name</label>
+<!-- <input type="text" class="form-control" (input)="onProductUpdate($event)"> -->
+<input type="text" class="form-control" [(ngModel)] = 'productName'>
+<!-- <p>{{productName}}</p> -->
+<button class="btn btn-primary my-4"  [disabled]="isDisabled" (click)="getNewProductStatus()">Add Product</button>
+<p class="alert alert-success" *ngIf="isProductAdded; else noProduct">{{productStatus}}</p>
+<ng-template #noProduct>
+    <p class="alert alert-success">
+        {{productStatus}} 
+    </p>
+</ng-template>
+<app-product></app-product>
+<app-product></app-product>
+
+
+<!-- ngModel >> FormModule have to be imported in app.module.ts -->

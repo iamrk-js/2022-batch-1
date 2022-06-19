@@ -1,0 +1,191 @@
+*{
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+}
+/* ================== helper css ==================  */
+.w-100{
+    width: 100% !important;
+}
+ul{
+    list-style: none;
+}
+a:link, a:visited{
+    text-decoration: none;
+}
+/* ================ header section css ==================  */
+.header {
+    background-color: #fcdb00;
+    padding: 60px 0 105px;
+
+}
+
+
+.header .navbar-default {
+    background: none;
+    border: none;
+    box-shadow: none;
+    margin-bottom: 70px;
+}
+.header .navbar-right li {
+    margin-left:45px ;
+}
+.header .navbar-right a {
+    color: #010101 !important;
+    font-size: 22px;
+    text-transform: capitalize;
+}
+
+.header a.navbar-brand {
+    padding: 0;
+}
+
+.ipadImg{
+    margin-left: 10%;
+}
+
+.inspire{
+    padding-top: 75px;
+}
+
+.heading-pri {
+    font-size: 32px;
+    color: #010101;
+    margin: 0 0 25px;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+.heading-sec{
+    font-size: 20px;
+    color: #313841;
+    margin:0 0 25px;
+}
+.para{
+    font-size: 16px;
+    color: #555;
+    margin:0 0 40px;
+}
+.links{
+    list-style: none;
+}
+
+.links li {
+    display: inline-block;
+    margin-right: 35px;
+}
+
+.links i {
+    font-size: 42px;
+    color: #010101;
+}
+
+/* ================ feature section css ==================  */
+.features{
+    padding: 110px 0 70px;
+}
+.feratureHeading{
+    margin-bottom: 90px;
+    padding: 0 35px;
+}
+.myThumbnail{
+    margin-bottom: 80px;
+}
+.myThumbnail i{
+    font-size: 50px;
+    color: #010101;
+}
+.thumbInfo h3{
+    font-size: 22px;
+    color: #010101;
+    margin: 0 0 20px;
+}
+
+.thumbInfo p{
+    font-size: 16px;
+    color: #898989;
+    margin: 0;
+}
+
+/* ================ footer section css ==================  */
+.footer{
+    padding: 95px 0 135px;
+    background-color: #010101;
+}
+
+.footer .feratureHeading {
+    margin-bottom: 130px;
+}
+
+.footer .heading-pri{
+    color: #fcdb00;
+    font-weight: lighter;
+}
+.footer .heading-sec{
+    color: #898989;
+    margin-bottom: 45px;
+}
+.contactForm{
+    margin-bottom: 70px;
+}
+.submit{
+    border: 1px solid #fcdb00;
+    text-transform: uppercase;
+    background-color: #fcdb00;
+    color: #000;
+    transition: all .3s;
+}
+
+.submit:hover{
+    color: #fcdb00;
+    background-color: #000;
+}
+
+.socialLinks li {
+    display: inline-block;
+    margin-right: 30px;
+}
+.socialLinks li i{
+    font-size: 42px;
+    color: #fcdb00;
+}
+
+
+.footerLinks li , .footerLinks li  a {
+    color: #fff;
+    font-size: 16px;
+}
+
+
+
+
+
+@media all and (max-width:768px) {
+    .inspire {
+        padding-top: 0px;
+    }
+    .ipadImg {
+        margin: 40px 0 0 0;
+    }
+    .feratureHeading {
+        margin-bottom: 40px !important;
+        padding: 0 5px;
+    }
+    .socialLinks li {
+        margin-right: 20px;
+    }
+    .footer .heading-sec {
+        margin-bottom: 25px;
+    }
+    .contactForm {
+        margin-bottom: 40px;
+    }
+    .header .navbar-default .navbar-toggle{
+        background-color: #fcdb00 !important;
+    }
+    .header .navbar-default .navbar-toggle .icon-bar {
+        background-color: #fff !important;
+    }
+   .header .navbar-default .navbar-collapse,.header .navbar-default .navbar-form {
+        border: none !important;
+    }
+}

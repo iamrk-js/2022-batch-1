@@ -1,0 +1,18 @@
+ <!-- <p>This is {{productName}} Product with ID : {{productId}}</p> -->
+ <p [ngStyle]="{backgroundColor : getBgColor()}"
+    [ngClass]="{'text-white' : isProductAvailable, 'p-4' :isProductAvailable
+    , 'p-2': !isProductAvailable}"
+    class="bgOrange">This is {{productName}} Product with ID : {{getProductId()}}. 
+    <span *ngIf="isProductAvailable; else productAval">Product is available</span>
+    <ng-template #productAval>
+        <span>Product is not available</span>
+    </ng-template>
+ </p>
+ <!-- <span [innerText]="productName"></span> -->
+ <!-- <span [innerHTML]="productName"></span> -->
+ <span [textContent]="productName"></span>
+ <div class="row">
+    <div class="col-sm-8 offset-sm-2 mb-2">
+        <input type="text" [value]="'Samsung'" class="form-control">
+    </div>
+ </div>
