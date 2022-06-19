@@ -36,7 +36,7 @@
     ];
     
     // Array.prototype.filter()
-    // 1. Filter the list of inventors for those who were born in the 1500's
+    // 1. Filter the list of inventors for those who were born in the 1500 century
 
     // Array.prototype.map()
     // 2. Give us an array of the inventors first and last names
@@ -60,6 +60,11 @@
     // Sum up the instances of each of these
     const data = ['car', 'car', 'truck', 'truck', 'bike', 'walk', 'car', 'van', 'bike', 'walk', 'car', 'van', 'car', 'truck' ];
 
+    // Filter the list of inventors for those who were born in the 1500 century
+    let newArry = inventors.filter(iv =>  iv.year >= 1500 && iv.year <= 1599)
+    .map(inv => ({first: inv.first, last: inv.last}))
+    // { first: 'Albert', last: 'Einstein' }
+    console.log(newArry);
   </script>
 </body>
 </html>

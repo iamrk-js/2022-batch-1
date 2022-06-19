@@ -1,0 +1,21 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.all div{
+    height: 250px;
+    margin-bottom: 10px;
+}
+.orange div{
+    background-color: orange;
+}
+.yellowgreen div{
+    background-color: yellowgreen;
+}
+.blueviolet div{
+    background-color: blueviolet;
+}
+.hotpink div{
+    background-color: hotpink;
+}

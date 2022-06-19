@@ -1,0 +1,32 @@
+{
+  "posts": [
+    {
+      "userId": 1,
+      "id": 1,
+      "title": "Post 11 on JavaScript",
+      "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto"
+    },
+    {
+      "userId": "4",
+      "title": "Angular 13",
+      "body": "Angular 13\n                  ",
+      "id": 2
+    },
+    {
+      "userId": "2",
+      "title": "Angular 13 new Features",
+      "body": "Angular 13 new Features\n                  ",
+      "id": 6
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

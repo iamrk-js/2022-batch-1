@@ -1,0 +1,54 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.mt-4 {
+  margin-top: 1.5rem !important;
+}
+.container {
+  width: 600px;
+  margin: 0 auto;
+}
+.tabHeading {
+  list-style: none;
+  display: flex;
+  background-color: #000;
+}
+.tabHeading li {
+  width: 25%;
+  padding: 5px 10px;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 22px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+
+.tabHeading li:hover,
+.tabHeading li:focus,
+.tabHeading li:active,
+.tabHeading li.active {
+  background-color: orange;
+}
+
+.tabPanel {
+  display: none;
+  padding: 10px;
+  border: 1px solid #000;
+  border-top: 0px;
+}
+.tabPanel.active {
+  display: block;
+  animation: fadeIn .5s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
