@@ -1,0 +1,27 @@
+<h1 class="bg-primary text-white p-4">{{title}}</h1>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-5">
+      <app-student-form (emittStudentInfo)="getStudentData($event)"></app-student-form>
+    </div>
+    <div class="col-sm-7">
+      <app-student-table [studentArray]="updatedStudentArray"></app-student-table>
+    </div>
+  </div>
+</div>
+
+<!-- <app-products></app-products> -->
+
+<!-- <div class="container">
+  <div class="row">
+      <div class="col">
+        <app-parent></app-parent>
+      </div>
+  </div>
+</div> -->
+
+
+<!-- 
+    we use input decorator to transfer data from parent to child
+    we use output decorator to transfer data from child to parent
+-->

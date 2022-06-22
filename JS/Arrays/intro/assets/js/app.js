@@ -23,3 +23,7 @@ var arrayMembers = ages.length;
 cl(arrayMembers)
 
 // In javaScript Everything is Object except primitive data types
+let btn = document.getElementById('btn');
+btn.addEventListener('click', function(e){
+    cl(e)
+})

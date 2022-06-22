@@ -1,0 +1,18 @@
+<table class="table table-bordered">
+    <thead>
+      <th>Sr No</th>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Email</th>
+      <th>Contact</th>
+    </thead>
+    <tbody>
+      <tr *ngFor="let std of studentArray; let i = index">
+        <td>{{i + 1}}</td>
+        <td>{{std.firstName}}</td>
+        <td>{{std.lastName}}</td>
+        <td>{{std.email}}</td>
+        <td>{{std.contact}}</td>
+      </tr>
+    </tbody>
+  </table>

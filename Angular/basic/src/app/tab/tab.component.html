@@ -1,0 +1,38 @@
+<!-- <button class="btn btn-primary" (click)="boxShowHandler()">click</button> -->
+<!-- <button class="btn btn-primary" (click)="isActive = !isActive">click</button>
+<hr>
+<div class="box" [class.show]="isActive"></div> -->
+
+<ul class="nav nav-pills">
+    <li class="nav-item">
+        <a class="nav-link" [ngClass]="{active : framework === 'angular'}" (click)="framework='angular'"
+            href="#">Angular</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" [class.active]="framework === 'react'" (click)="framework='react'" href="#">React</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" [ngClass]="{active : framework === 'vue'}" (click)="framework='vue'" href="#">Vue</a>
+    </li>
+</ul>
+
+<div [ngSwitch]="framework" class="mt-3">
+    <div class="card" *ngSwitchCase="'angular'">
+        <div class="card-body">
+            <p> <strong>Angular</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus repellat sunt tenetur minus aperiam
+                corrupti.</p>
+        </div>
+    </div>
+    <div class="card" *ngSwitchCase="'react'">
+        <div class="card-body">
+            <p> <strong>React</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus repellat sunt tenetur minus aperiam
+                corrupti.</p>
+        </div>
+    </div>
+    <div class="card" *ngSwitchCase="'vue'">
+        <div class="card-body">
+            <p> <strong>Vue</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus repellat sunt tenetur minus aperiam
+                corrupti.</p>
+        </div>
+    </div>
+</div>

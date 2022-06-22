@@ -1,0 +1,9 @@
+<p [innerText]="msgForChild"></p>
+
+<app-child [msgFromParent]="msgForChild" (childEmmiter)="getMsgFromChild($event)"></app-child>
+
+<p *ngIf="msgFromChild" class="alert alert-success">  This is msg from child <br>
+    <strong>
+        {{msgFromChild}}
+    </strong>
+</p>
